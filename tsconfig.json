@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "target": "es6",
+    "target": "es5",
     "strict": true,
-    "lib": ["es6"],
     "moduleResolution": "node",
     "outDir": "dist",
     "declaration": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist"
+  ]
 }
