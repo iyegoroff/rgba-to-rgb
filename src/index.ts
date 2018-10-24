@@ -5,7 +5,7 @@ export default (background: string, color: string) => {
   const c = color.match(/rgba\((-?\d{1,3}),\s*(-?\d{1,3}),\s*(-?\d{1,3}),\s*([0-1]?(?:\.\d+)?)\)/)
 
   invariant(
-      b !== null && b.length === 4,
+    b !== null && b.length === 4,
     `rgba-to-rgb: background should be in 'rgb(r, g, b)' format, got '${background}'.`
   )
 
