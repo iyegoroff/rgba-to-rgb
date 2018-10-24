@@ -1,6 +1,6 @@
 import * as invariant from 'invariant'
 
-export default (background: string, color: string) => {
+export default (background: string = '', color: string = '') => {
   const b = background.match(/rgb\((-?\d{1,3}),\s*(-?\d{1,3}),\s*(-?\d{1,3})\)/)
   const c = color.match(/rgba\((-?\d{1,3}),\s*(-?\d{1,3}),\s*(-?\d{1,3}),\s*([0-1]?(?:\.\d+)?)\)/)
 
