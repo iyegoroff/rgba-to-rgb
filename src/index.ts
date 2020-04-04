@@ -14,8 +14,8 @@ export default (background: string = '', color: string = '') => {
     `rgba-to-rgb: color should be in 'rgba(r, g, b, a)' format, got '${color}'.`
   )
 
-  const [, bRed, bGreen, bBlue] = b!
-  const [, cRed, cGreen, cBlue, cAlpha] = c!
+  const [, bRed, bGreen, bBlue] = b
+  const [, cRed, cGreen, cBlue, cAlpha] = c
 
   const red = (1 - +cAlpha) * +bRed + +cAlpha * +cRed
   const green = (1 - +cAlpha) * +bGreen + +cAlpha * +cGreen
